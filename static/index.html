@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Heatmap Jungler</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Heatmap du jungler</h1>
+
+    <div>
+        <select id="teamSelect">
+            <option value="CLA">CLA</option>
+            <option value="PCS">PCS</option>
+        </select>
+
+        <input type="range" id="timeSlider" min="0" max="1800" step="15" value="0">
+        <span id="timeValue">0:00</span>
+    </div>
+
+    <div id="mapContainer">
+    <img id="mapImage" src="/static/map.webp">
+        <canvas id="pointsCanvas" width="512" height="512"></canvas>
+    </div>
+
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
